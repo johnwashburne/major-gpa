@@ -7,7 +7,7 @@ Note: this method is certainly not perfect, as it does not account for every sin
 The histogram below shows the distribution of the calculated GPAs:<br/>
 ![histogram](https://github.com/johnwashburne/major-gpa/blob/main/analysis/distribution.png)
 
-The list of calculates major GPAs is below: 
+The list of calculated major GPAs is below: 
 Major Program | Average GPA
 ---- | ----
 Computational Media - People-Interaction Design | 3.502
