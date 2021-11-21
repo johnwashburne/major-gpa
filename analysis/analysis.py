@@ -11,7 +11,9 @@ with open('results_sorted.csv', 'r') as csvfile:
         table.append([row[0], row[1]])
 
 x = np.array(gpas)
-plt.hist(x, histtype='stepfilled', color='steelblue', edgecolor=None, bins=20, alpha=.50)
+plt.hist(x, histtype='stepfilled', color='steelblue', edgecolor=None, bins=15, alpha=.50)
+plt.xlabel("Grade Point Average")
+plt.ylabel("Count")
 plt.show()
 
 print("Major Program | Average GPA")
