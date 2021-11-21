@@ -5,8 +5,9 @@ Next, the average GPA for each of those requirements must be found. GT stores al
 Now that average GPA can be found if you feed in a major's catalog URL, the question becomes: How do you get the correct URL for each major program? The Georgia Tech catalog has a page with links to every major program, but the requirements table that we're looking for is usually buried under a few more layers of links. To get around this, I designed a BFS web crawler that starts by scraping all of the links off of the major lists page and using that as the starting point for the queue. Once the queue is initialized, BFS runs by taking in all of the links on the page, determining if a valid requirements table exists on the current page, and continuing onto the next page. The resulting list of major catalog URLs can be found in urls.json.<br/><br/>
 Note: this method is certainly not perfect, as it does not account for every single possibility when parsing the requirements table. For example, it does not account for free elective credit hours. However, I felt as though the process provided an adequete approximation for the purposes of this project.<br/><br/>
 The histogram below shows the approximately normal distribution of the calculated GPAs:
+![histogram](http://url/to/img.png)
 
-The list of major GPAs calculated is below: 
+The list of calculates major GPAs is below: 
 Major Program | Average GPA
 ---- | ----
 Computational Media - People-Interaction Design | 3.502
